@@ -86,7 +86,7 @@ export default function Privacy() {
                     Contact Us
                 </h2>
                 <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-                    For more information or questions about our privacy practices, contact us at help@unilime.group.
+                    For more information or questions about our privacy practices, contact us at <a className={`font-medium text-blue-600 dark:text-blue-500 hover:underline`} href="mailto:info@unilime.group">info@unilime.group</a>.
                 </p>
             </div>
 
