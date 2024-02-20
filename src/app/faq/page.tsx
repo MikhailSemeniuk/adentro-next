@@ -1,5 +1,10 @@
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Frequently Asked Questions - Unilime SpeedUp",
+};
 
 export default function Faq() {
     return (
@@ -11,7 +16,7 @@ export default function Faq() {
                 <section className="dark:bg-gray-900">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Frequently
-                            asked questions</h1>
+                            Asked Questions</h1>
                         <div
                             className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
                             <div>

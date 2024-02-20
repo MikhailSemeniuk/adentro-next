@@ -1,5 +1,10 @@
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Privacy Policy - Unilime SpeedUp",
+};
 
 export default function Privacy() {
     return (
@@ -10,7 +15,7 @@ export default function Privacy() {
             <div
                 className="my-4 mb-32 z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-column">
                 <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                    Privacy policy
+                    Privacy Policy
                 </h1>
                 <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
                     At UnilimeApp, we are committed to safeguarding the privacy of merchants using our applications
