@@ -80,7 +80,7 @@ export default function Faq() {
                                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     <p className="text-gray-500 dark:text-gray-400">We focus on optimizing JavaScript
                                         {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                        and images. We do not compromise the integrity of your online store's templates
+                                         and images. We do not compromise the integrity of your online store's templates
                                         in any way.</p>
                                 </div>
                                 <div className="mb-10">
