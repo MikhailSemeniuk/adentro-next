@@ -9,7 +9,7 @@ export default function Home() {
             <Header/>
 
             <div
-                className="my-4 mb-32 text-center z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-column">
+                className="my-4 mb-32 text-center max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-column">
                 <Image
                     className="inline-block mb-6 dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
                     src="/unilime.svg"

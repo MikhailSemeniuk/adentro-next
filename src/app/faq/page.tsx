@@ -12,7 +12,7 @@ export default function Faq() {
 
             <Header/>
 
-            <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-column">
+            <div className="max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-column">
                 <section className="dark:bg-gray-900">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Frequently
