@@ -38,7 +38,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className={`md:p-6 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left`}>
-                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://unilime.group/" className="hover:underline">Unilime</a>. All Rights Reserved.</span>
+                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {new Date().getFullYear()} <a href="https://unilime.group/" className="hover:underline">Unilime</a>. All Rights Reserved.</span>
             </div>
         </footer>
     );
