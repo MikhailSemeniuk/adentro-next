@@ -20,16 +20,16 @@ export default function Privacy() {
                         </h1>
                         <div className="pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
                             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-                                At UnilimeApp, we are committed to safeguarding the privacy of merchants using our applications
-                                (&quot;the Service&quot;) on Shopify to power their stores. This Privacy Policy outlines how personal
+                                At SpeedUp, we are committed to safeguarding the privacy of merchants using our applications
+                                (&quot;the App&quot;) on Shopify to power their stores. This Privacy Policy outlines how personal
                                 information is gathered, utilized, and shared in connection with the installation or use of the
-                                UnilimeApp on your Shopify-supported store.
+                                SpeedUp on your Shopify-supported store.
                             </p>
                             <h2 className="mb-4 text-4xl font-bold dark:text-white">
                                 Personal Information Collected by the App
                             </h2>
                             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-                                Upon installing the UnilimeApp, certain information from your Shopify account becomes accessible.
+                                Upon installing the SpeedUp, certain information from your Shopify account becomes accessible.
                                 The complete list, as available through Shopify, can be viewed <a
                                 className={`font-medium text-blue-600 dark:text-blue-500 hover:underline`}
                                 href="https://shopify.dev/docs/api/usage/access-scopes" target={`_blank`}>here</a>.
@@ -45,8 +45,7 @@ export default function Privacy() {
                             </ul>
                             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
                                 We gather this information directly from individuals, your Shopify account, or through technologies
-                                such as cookies, log files, web beacons, tags, and pixels. We also use hotjar.com for recording
-                                visitor sessions, ensuring GDPR compliance and data security.
+                                such as cookies, log files, web beacons, tags, and pixels ensuring GDPR compliance and data security.
                             </p>
                             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
                                 To view permissions explicitly for each app, click the &quot;View Details&quot; link on the Shopify apps page
@@ -76,7 +75,7 @@ export default function Privacy() {
                             </h2>
                             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
                                 For European residents, you have the right to access, correct, update, or delete your personal
-                                information. To exercise this right, contact us at help@unilimeapp.com. If you are a European
+                                information. To exercise this right, contact us via e-mail specified below. If you are a European
                                 resident, note that we process your information to fulfill contracts or pursue legitimate business
                                 interests, and your data may be transferred outside of Europe.
                             </p>
