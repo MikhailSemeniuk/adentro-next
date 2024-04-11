@@ -13,14 +13,13 @@ const Header = () => {
                         <span
                             className="flex items-center relative transition-all ease-in duration-75 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                          <Image
-                             src="/speedup.svg"
+                             src="/speedup-1.svg"
                              alt="SpeedUp"
                              className="dark:invert rounded-md mr-4"
-                             width={89}
+                             width={240}
                              height={83}
                              priority
                          />
-                            SpeedUp
                         </span>
                     </span>
                 </a>
