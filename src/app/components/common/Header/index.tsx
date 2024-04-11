@@ -39,7 +39,7 @@ const Header = () => {
                         src="/unilime.svg"
                         alt="Unilime Logo"
                         className="dark:invert"
-                        width={130}
+                        width={110}
                         height={24}
                         priority
                     />
