@@ -4,7 +4,7 @@ import Footer from "./components/common/Footer";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24 px-5">
+        <main className="flex min-h-screen flex-col items-center justify-between p-16 px-5">
 
             <Header/>
 
