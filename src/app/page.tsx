@@ -9,15 +9,7 @@ export default function Home() {
             <Header/>
 
             <div
-                className="my-4 mb-32 text-center max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-column">
-                <Image
-                    className="inline-block mb-6 dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                    src="/unilime.svg"
-                    alt="Unilime Logo"
-                    width={180}
-                    height={37}
-                    priority
-                />
+                className="my-4 mb-32 pt-32 text-center max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex-column">
                 <h1 className="my-4 mb-10 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     We increase the conversion rate by increasing <span className="text-blue-600 dark:text-blue-500">
                     Core Web Vitals</span> metrics
