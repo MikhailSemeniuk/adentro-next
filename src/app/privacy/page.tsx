@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Privacy() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-16 px-5 bg-white">
+        <main className="flex min-h-screen flex-col items-center justify-between p-32 lg:p-16 px-5 bg-white">
 
             <Header/>
 
