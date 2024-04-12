@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <div className="max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-            <p className="text-2xl font-bold fixed left-0 top-0 flex w-full justify-center from-zinc-200 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto  lg:rounded-xl">
+            <p className="text-2xl font-bold fixed py-5 left-0 top-0 flex w-full justify-center from-zinc-200 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto  lg:rounded-xl">
                 <a href="/" className="flex group" rel="noopener noreferrer">
                     <span
                         className="relative inline-flex items-center justify-center overflow-hidden text-gray-900 group dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
@@ -39,7 +39,7 @@ const Header = () => {
                         src="/unilime.svg"
                         alt="Unilime Logo"
                         className="dark:invert"
-                        width={110}
+                        width={120}
                         height={24}
                         priority
                     />
