@@ -5,7 +5,7 @@ import Image from "next/image";
 const Header = () => {
 
     return (
-        <div className="max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+        <div className="max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex z-20">
             <p className="text-2xl font-bold fixed py-5 left-0 top-0 flex w-full justify-center from-zinc-200 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto  lg:rounded-xl">
                 <a href="/" className="flex group" rel="noopener noreferrer">
                     <span
