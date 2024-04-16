@@ -33,9 +33,9 @@ export default function Changelog() {
                                               d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
                                     </svg>
                                     1.0.6
-                                    <span id="changelog-1-0-6" className="absolute -top-[40px]"></span>
+                                    <span id="v-1-0-6" className="absolute -top-[40px]"></span>
                                     <a className="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100 hidden xl:block"
-                                       href="#changelog-1-0-6" aria-label="Link to this section: changelog-1-0-6">#</a>
+                                       href="#v-1-0-6" aria-label="Link to this section: v-1-0-6">#</a>
                                 </h2>
                                 <ul className={`space-y-1 mb-9 text-lg text-gray-500 list-disc list-inside dark:text-gray-400`}>
                                     <li>Minor changes to configurations</li>
@@ -49,9 +49,9 @@ export default function Changelog() {
                                               d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
                                     </svg>
                                     1.0.5
-                                    <span id="changelog-1-0-5" className="absolute -top-[40px]"></span>
+                                    <span id="v-1-0-5" className="absolute -top-[40px]"></span>
                                     <a className="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100 hidden xl:block"
-                                       href="#changelog-1-0-5" aria-label="Link to this section: changelog-1-0-5">#</a>
+                                       href="#v-1-0-5" aria-label="Link to this section: v-1-0-5">#</a>
                                 </h2>
                                 <ul className={`space-y-1 mb-9 text-lg text-gray-500 list-disc list-inside dark:text-gray-400`}>
                                     <li>Updated configuration to add privacy compliance webhooks</li>
@@ -65,9 +65,9 @@ export default function Changelog() {
                                               d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
                                     </svg>
                                     1.0.4
-                                    <span id="changelog-1-0-4" className="absolute -top-[40px]"></span>
+                                    <span id="v-1-0-4" className="absolute -top-[40px]"></span>
                                     <a className="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100 hidden xl:block"
-                                       href="#changelog-1-0-4" aria-label="Link to this section: changelog-1-0-4">#</a>
+                                       href="#v-1-0-4" aria-label="Link to this section: v-1-0-4">#</a>
                                 </h2>
                                 <ul className={`space-y-1 mb-9 text-lg text-gray-500 list-disc list-inside dark:text-gray-400`}>
                                     <li>Updated billing plan information</li>
@@ -83,9 +83,9 @@ export default function Changelog() {
                                               d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
                                     </svg>
                                     1.0.3
-                                    <span id="changelog-1-0-3" className="absolute -top-[40px]"></span>
+                                    <span id="v-1-0-3" className="absolute -top-[40px]"></span>
                                     <a className="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100 hidden xl:block"
-                                       href="#changelog-1-0-3" aria-label="Link to this section: changelog-1-0-3">#</a>
+                                       href="#v-1-0-3" aria-label="Link to this section: v-1-0-3">#</a>
                                 </h2>
                                 <ul className={`space-y-1 mb-9 text-lg text-gray-500 list-disc list-inside dark:text-gray-400`}>
                                     <li>Hotfixes</li>
@@ -100,9 +100,9 @@ export default function Changelog() {
                                               d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
                                     </svg>
                                     1.0.2
-                                    <span id="changelog-1-0-2" className="absolute -top-[40px]"></span>
+                                    <span id="v-1-0-2" className="absolute -top-[40px]"></span>
                                     <a className="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100 hidden xl:block"
-                                       href="#changelog-1-0-2" aria-label="Link to this section: changelog-1-0-2">#</a>
+                                       href="#v-1-0-2" aria-label="Link to this section: v-1-0-2">#</a>
                                 </h2>
                                 <ul className={`space-y-1 mb-9 text-lg text-gray-500 list-disc list-inside dark:text-gray-400`}>
                                     <li>Check Performance functionality</li>
@@ -119,9 +119,9 @@ export default function Changelog() {
                                               d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
                                     </svg>
                                     1.0.1
-                                    <span id="changelog-1-0-1" className="absolute -top-[40px]"></span>
+                                    <span id="v-1-0-1" className="absolute -top-[40px]"></span>
                                     <a className="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100 hidden xl:block"
-                                       href="#changelog-1-0-1" aria-label="Link to this section: changelog-1-0-1">#</a>
+                                       href="#v-1-0-1" aria-label="Link to this section: v-1-0-1">#</a>
                                 </h2>
                                 <ul className={`space-y-1 text-lg text-gray-500 list-disc list-inside dark:text-gray-400`}>
                                     <li>Release of the initial version of SpeedUp</li>
