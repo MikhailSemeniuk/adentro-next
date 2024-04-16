@@ -19,7 +19,7 @@ export default function Changelog() {
                         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                             SpeedUp - Changelog
                         </h1>
-                        <p className="mmb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+                        <p className="mmb-4 text-2xl pt-2 font-normal text-gray-500 dark:text-gray-400">
                             Read more about the releases made for SpeedUp from our changelog
                         </p>
                         <div className="flex w-full  pt-8">
