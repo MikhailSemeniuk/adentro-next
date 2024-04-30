@@ -14,7 +14,8 @@ export default function Home() {
                     We increase the conversion rate by increasing <span className="text-blue-600 dark:text-blue-500">
                     Core Web Vitals</span> metrics
                 </h1>
-                <div className="pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
+                <div
+                    className="pt-8 mb-16 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
                     <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
                         Our App boosts your website&apos;s Core Web Vitals. As a result, it helps to improve your
                         Conversion
@@ -56,6 +57,15 @@ export default function Home() {
                         </li>
                     </ul>
                 </div>
+                <a href="https://apps.shopify.com/unilime-speedup" target={`_blank`}
+                   className="inline-flex items-center text-2xl lg:text-5xl px-5 py-4 font-medium text-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    SpeedUp my store
+                    <svg className="w-5 h-5 lg:w-8 lg:h-8 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                         fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                              d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
             </div>
 
             <Footer/>
