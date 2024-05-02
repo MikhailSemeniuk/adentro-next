@@ -25,7 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+a.custom-btn{
+  background: #daff00;
+  color: #143142;
+}
+a.custom-btn:hover, a.custom-btn:focus{
+  background: #143142;
+  color: #daff00;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

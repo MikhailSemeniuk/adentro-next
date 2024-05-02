@@ -58,9 +58,9 @@ export default function Home() {
                     </ul>
                 </div>
                 <a href="https://apps.shopify.com/unilime-speedup" target={`_blank`}
-                   className="inline-flex items-center text-2xl lg:text-5xl px-5 py-4 font-medium text-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                   className="custom-btn inline-flex items-center px-5 py-3 text-2xl lg:text-2xl font-medium text-center focus:ring-4 focus:outline-none rounded-lg focus:outline-none">
                     SpeedUp my store
-                    <svg className="w-5 h-5 lg:w-8 lg:h-8 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <svg className="w-4 h-4 lg:w-4 lg:h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                          fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                               d="M1 5h12m0 0L9 1m4 4L9 9"/>
