@@ -19,28 +19,28 @@ const Expertise = () => {
                     <Image
                         src="/logos/elastic.png"
                         alt="elastic.png"
-                        className="dark:invert max-h-12 md:max-h-20 object-contain object-center h-auto w-auto"
+                        className=" max-h-12 md:max-h-20 object-contain object-center h-auto w-auto"
                         width={224}
                         height={76}
                     />
                     <Image
                         src="/logos/splunk.png"
                         alt="splunk.png"
-                        className="dark:invert max-h-12 md:max-h-20 object-contain object-center h-auto w-auto"
+                        className=" max-h-12 md:max-h-20 object-contain object-center h-auto w-auto"
                         width={226}
                         height={66}
                     />
                     <Image
                         src="/logos/Google_Cloud_logo.png"
                         alt="Google_Cloud_logo.png"
-                        className="dark:invert max-h-12 md:max-h-20 object-contain object-center h-auto w-auto"
+                        className=" max-h-12 md:max-h-20 object-contain object-center h-auto w-auto"
                         width={269}
                         height={42}
                     />
                     <Image
                         src="/logos/Amazon_Web_Services_Logo.png"
                         alt="Amazon_Web_Services_Logo.png"
-                        className="dark:invert max-h-12 md:max-h-14 object-contain object-center h-auto w-auto"
+                        className=" max-h-12 md:max-h-14 object-contain object-center h-auto w-auto"
                         width={118}
                         height={71}
                     />
