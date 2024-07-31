@@ -12,8 +12,8 @@ const WhyUs = () => {
                 <ul className="grid grid-cols-why-us gap-10 lg:gap-16 lg:ml-28 sm:ml-16">
                     <li className="grid grid-cols-1 sm:grid-cols-[88px_1fr] gap-3 sm:gap-8">
                         <Image
-                            src="/icons/Advanced Automation.svg"
-                            alt="Icon"
+                            src="/icons/AdvancedAutomation.svg"
+                            alt="AdvancedAutomation.svg"
                             className="w-full h-full max-w-[5.5rem] max-h-[5.5rem] object-contain object-center"
                             width={88}
                             height={88}
@@ -47,8 +47,8 @@ const WhyUs = () => {
                     </li>
                     <li className="grid grid-cols-1 sm:grid-cols-[88px_1fr] gap-3 sm:gap-8">
                         <Image
-                            src="/icons/DAST Scanning.svg"
-                            alt="Icon"
+                            src="/icons/DAST.svg"
+                            alt="DAST.svg"
                             className="w-full h-full max-w-[5.5rem] max-h-[5.5rem] object-contain object-center"
                             width={88}
                             height={88}
