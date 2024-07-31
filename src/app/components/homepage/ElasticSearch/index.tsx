@@ -18,7 +18,7 @@ const ElasticSearch = () => {
                 </h2>
 
                 <p className="sm:text-[26px] max-w-3xl relative z-1">
-                    Elastic Search's robust data indexing and search capabilities combined with the analytical power of Large Language Models (LLM) offer
+                    Elastic Search&apos;s robust data indexing and search capabilities combined with the analytical power of Large Language Models (LLM) offer
                     unparalleled insights into your security data. This combination allows for:
                 </p>
 

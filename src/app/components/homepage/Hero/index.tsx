@@ -17,7 +17,7 @@ const Hero = () => {
                     Efficiency comes with <span className="bg-gradient-3 bg-clip-text  text-transparent  relative z-1">automation</span>
                 </h1>
                 <p className="max-w-4xl mx-auto text-md relative z-1">
-                    In today's dynamic digital landscape, efficient security operations are crucial for organizational success and resilience. Cutting-edge
+                    In today&apos;s dynamic digital landscape, efficient security operations are crucial for organizational success and resilience. Cutting-edge
                     automation transforms compliance governance and risk assessment.
                 </p>
                 <div className="flex flex-col gap-4 justify-center items-center relative z-1">
