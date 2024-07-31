@@ -6,7 +6,7 @@ const Hero = () => {
         <section className="py-20 pt-40 md:pt-60 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden lg:overflow-visible">
             <div className="container mx-auto text-center flex flex-col justify-center gap-9 relative">
                 <Image
-                    src="circle/hero-circle.png"
+                    src="circles/hero-circle.png"
                     alt="hero-circle.png"
                     className="dark:invert absolute top-[25%] left-[33%] md:top-[45%] transform -translate-y-1/2 z-0"
                     width={1040}
