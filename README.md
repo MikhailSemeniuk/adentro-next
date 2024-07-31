@@ -23,7 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Cloudflare integration 
 
-- domain https://speedapp.unilime.group/
+- domain [adentro-next.pages.dev](http://adentro-next.pages.dev)
 - production branch `main`
 - cloudflare project `adentro-next`
 - deploy command `CLOUDFLARE_ACCOUNT_ID=d8a38741b4d0c29d621bef10eaee8d0c CLOUDFLARE_API_TOKEN=CG3-QJtYTZZuT47rwz3JqvrrqUJ3pShDjyU35kR- npm run pages:deploy`

@@ -1,59 +1,33 @@
 // Footer
 
+import Image from "next/image";
+
 const Footer = () => {
 
     return (
-        <footer>
-            <div className="mb-6 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-                <a
-                    href="/privacy"
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                    rel="noopener noreferrer"
-                >
-                    <h2 className={`mb-3 text-2xl font-semibold`}>
-                        Privacy Policy{" "}
-                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
+        <footer className="py-16 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden">
+            <Image
+                src="/circles/footer-circle.png"
+                alt="footer-circle"
+                className="dark:invert absolute left-[-20%] sm:left-[-10%] sm:top-[10%]"
+                width={686}
+                height={686}
+                priority
+            />
+            <div className="container flex justify-center items-center flex-col w-full mx-auto">
+                <div className="flex flex-col justify-center items-center gap-6 max-w-lg text-center mb-20 md:mb-32 lg:mb-52">
+                    <h2 className="text-footer-heading-mobile md:text-footer-heading">
+                        Let’s make the&nbsp;connection!
                     </h2>
-                    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                        Personal Information Collected by the App.
-                    </p>
-                </a>
-
-                <a
-                    href="/faq"
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                    rel="noopener noreferrer"
-                >
-                    <h2 className={`mb-3 text-2xl font-semibold`}>
-                        Faq{" "}
-                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
+                    <a
+                        href="mailto:email@email.com"
+                        className="bg-gradient-3 bg-clip-text text-xl md:text-3xl text-transparent relative hover:before:w-0 before:w-full before:h-0.5 before:absolute before:bg-gradient-3 before:bottom-0 before:left-0 before:transition-all">
+                        email@email.com
+                    </a>
+                </div>
+                <span className="text-sm text-center ">
+                    &#169; {new Date().getFullYear()} adentro AG | Sihlbruggstrasse 109 | CH 6340 Baar ZG | Switzerland
                 </span>
-                    </h2>
-                    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                        Learn about SpeedUp Shopify App.
-                    </p>
-                </a>
-                <a
-                    href="/changelog"
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                    rel="noopener noreferrer"
-                >
-                    <h2 className={`mb-3 text-2xl font-semibold`}>
-                        Changelog{" "}
-                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-                    </h2>
-                    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                        Read more about the releases made for SpeedUp from our changelog
-                    </p>
-                </a>
-            </div>
-            <div className={`md:p-6 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left`}>
-                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {new Date().getFullYear()} <a href="https://unilime.group/" className="hover:underline">Unilime</a>. All Rights Reserved.</span>
             </div>
         </footer>
     );

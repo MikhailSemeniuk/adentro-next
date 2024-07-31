@@ -1,51 +1,98 @@
-// Header
+"use client"; // Header
 import Image from "next/image";
+import {useEffect, useState} from "react";
 
 
 const Header = () => {
+    const [active, setActive] = useState<boolean>(true);
+    const [isScroll, setIsScroll] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            window.scrollY > 10 ? setIsScroll(true) : setIsScroll(false)
+            console.log(window.scrollY)
+            console.log(isScroll)
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [isScroll]);
+
+    const onClick = () => {
+        setActive(!active)
+    };
 
     return (
-        <div className="max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex z-20">
-            <p className="text-2xl font-bold fixed py-5 left-0 top-0 flex w-full justify-center from-zinc-200 backdrop-blur-2xl dark:from-inherit lg:static lg:w-auto  lg:rounded-xl">
-                <a href="/" className="flex group" rel="noopener noreferrer">
-                    <span
-                        className="relative inline-flex items-center justify-center overflow-hidden text-gray-900 group dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
-                        <span
-                            className="flex items-center relative transition-all ease-in duration-75 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                         <Image
-                             src="/speedup-1.svg"
-                             alt="SpeedUp"
-                             className="dark:invert rounded-md mr-4"
-                             width={240}
-                             height={83}
-                             priority
-                         />
-                        </span>
-                    </span>
-                </a>
-            </p>
-            <div
-                className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-                <a
-                    className="pointer-events-none flex items-end place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-                    href="https://unilime.group/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span
-                        className="flex mb-3 mr-1 font-semibold"> by{" "}
-                    </span>
+        <header
+            className={`fixed transition-all left-0 top-0 right-0 flex-auto-no-shrink w-full items-center justify-between text-sm lg:flex z-20 md:py-11 py-6 ${isScroll && `shadow-md backdrop-blur bg-white/30`}`}>
+            <div className={`container grid grid-cols-2 sm:flex items-center justify-center gap-6 md:gap-12 mx-auto after:left-0 after:top-0 after:bg-black/30 after:transition-opacity after:backdrop-blur after:fixed after:z-9 after:h-dvh after:block after:w-full  ${active ? 'after:opacity-0 after:invisible' : 'after:opacity-1 after:visible'}`}>
+                <nav className="hidden sm:flex justify-center w-auto">
+                    <ul className="flex items-center justify-center gap-6 md:gap-12">
+                        <li className="text-sm font-light">
+                            <a className="hover:underline text-sm font-normal" href="/approach">Approach</a>
+                        </li>
+                        <li>
+                            <a className="hover:underline" href="/services">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="/" className="sm:row-end-1 sm:col-span-2 justify-start sm:justify-center sm:col-span-none flex group" rel="noopener noreferrer">
                     <Image
-                        src="/unilime.svg"
-                        alt="Unilime Logo"
+                        src="/logo.svg"
+                        alt="Adentro"
                         className="dark:invert"
-                        width={120}
-                        height={24}
+                        width={145}
+                        height={25}
                         priority
                     />
                 </a>
+                <button
+                    onClick={onClick}
+                    className="ml-auto flex sm:hidden z-99"
+                >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M21 12H3M21 6H3M15 18H3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                    </svg>
+                </button>
+                <nav className="hidden sm:flex justify-center w-auto">
+                    <ul className="flex items-center justify-center gap-6 md:gap-12">
+                        <li>
+                            <a className="hover:underline" href="/culture">Culture</a>
+                        </li>
+                        <li>
+                            <a className="hover:underline" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav
+                    className={`flex sm:hidden shadow-lg justify-center w-2/3 fixed top-0 right-0 z-10 bg-white h-dvh transition-all ${active ? 'translate-x-full' : 'translate-x-0 '}`}>
+                    <button
+                        onClick={onClick}
+                        className="absolute right-4 top-6 sm:hidden z-99"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                  d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <ul
+                        className="flex items-center justify-start flex-col gap-6 md:gap-12 py-20">
+                        <li className="text-m">
+                            <a className="hover:underline text-lg" href="/approach">Approach</a>
+                        </li>
+                        <li>
+                            <a className="hover:underline text-lg" href="/services">Services</a>
+                        </li>
+                        <li>
+                            <a className="hover:underline text-lg" href="/culture">Culture</a>
+                        </li>
+                        <li>
+                            <a className="hover:underline text-lg" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
     );
 };
 
