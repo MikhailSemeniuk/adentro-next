@@ -3,7 +3,7 @@ import Image from "next/image";
 const WhyUs = () => {
 
     return (
-        <section className="py-20 md:pt-40 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden lg:overflow-visible">
+        <section id="approach" className="py-20 md:pt-40 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden lg:overflow-visible">
             <div className="container mx-auto text-center flex flex-col justify-center gap-14 sm:gap-28 relative">
                 <h2 className="text-section-subheading leading-none text-left">
                     Why choose us?

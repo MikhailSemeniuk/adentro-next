@@ -5,11 +5,11 @@ import Image from "next/image";
 const Footer = () => {
 
     return (
-        <footer className="py-16 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden">
+        <footer id="contact" className="py-16 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden">
             <Image
                 src="/circles/footer-circle.png"
                 alt="footer-circle"
-                className="dark:invert absolute left-[-20%] sm:left-[-10%] sm:top-[10%]"
+                className=" absolute left-[-20%] sm:left-[-10%] sm:top-[10%]"
                 width={686}
                 height={686}
                 priority

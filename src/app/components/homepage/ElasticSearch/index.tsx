@@ -3,7 +3,7 @@ import Image from "next/image";
 const ElasticSearch = () => {
 
     return (
-        <section className="py-20 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden lg:overflow-visible">
+        <section id="services" className="py-20 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden lg:overflow-visible">
             <div className="container mx-auto flex flex-col justify-center gap-14 sm:gap-24 relative">
                 <Image
                     src="/circles/elastic-circle.png"

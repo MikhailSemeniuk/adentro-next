@@ -8,7 +8,7 @@ const Hero = () => {
                 <Image
                     src="/circles/hero-circle.png"
                     alt="hero-circle.png"
-                    className="dark:invert absolute top-[25%] left-[33%] md:top-[45%] transform -translate-y-1/2 z-0"
+                    className="absolute top-[25%] left-[33%] md:top-[45%] transform -translate-y-1/2 z-0"
                     width={1040}
                     height={978}
                     priority
@@ -27,7 +27,6 @@ const Hero = () => {
                         <Image
                             src="/switz.svg"
                             alt="switz.svg"
-                            className="dark:invert"
                             width={18}
                             height={14}
                             priority

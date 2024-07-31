@@ -6,13 +6,21 @@ import {useEffect, useState} from "react";
 const Header = () => {
     const [active, setActive] = useState<boolean>(true);
     const [isScroll, setIsScroll] = useState<boolean>(false);
-
+    const handleClickMenu = () => {
+        if (window.innerWidth < 640) setActive(true);
+    }
     useEffect(() => {
         const handleScroll = () => {
             window.scrollY > 10 ? setIsScroll(true) : setIsScroll(false)
         };
+        handleScroll()
+        handleClickMenu()
+        window.addEventListener('resize', handleScroll);
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('resize', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
+        }
     }, [isScroll]);
 
     const onClick = () => {
@@ -21,15 +29,16 @@ const Header = () => {
 
     return (
         <header
-            className={`fixed transition-all left-0 top-0 right-0 flex-auto-no-shrink w-full items-center justify-between text-sm lg:flex z-20 md:py-11 py-6 ${isScroll && `shadow-md backdrop-blur bg-white/30`}`}>
-            <div className={`container grid grid-cols-2 sm:flex items-center justify-center gap-6 md:gap-12 mx-auto after:left-0 after:top-0 after:bg-black/30 after:transition-opacity after:backdrop-blur after:fixed after:z-9 after:h-dvh after:block after:w-full  ${active ? 'after:opacity-0 after:invisible' : 'after:opacity-1 after:visible'}`}>
+            className={`fixed transition-all left-0 top-0 right-0 flex-auto-no-shrink w-full items-center justify-between text-sm lg:flex z-20 md:py-11 py-6 ${isScroll && `shadow-md backdrop-blur bg-white/30 md:py-6`}`}>
+            <div
+                className={`container grid grid-cols-2 sm:flex items-center justify-center gap-6 md:gap-12 mx-auto after:left-0 after:top-0 after:bg-black/30 after:transition-opacity after:backdrop-blur after:fixed after:z-9 after:h-dvh after:block after:w-full  ${active ? 'after:opacity-0 after:invisible' : 'after:opacity-1 after:visible'}`}>
                 <nav className="hidden sm:flex justify-center w-auto">
                     <ul className="flex items-center justify-center gap-6 md:gap-12">
                         <li className="text-sm font-light">
-                            <a className="hover:underline text-sm font-normal" href="/approach">Approach</a>
+                            <a className="hover:underline text-sm font-normal" href="#approach">Approach</a>
                         </li>
                         <li>
-                            <a className="hover:underline" href="/services">Services</a>
+                            <a className="hover:underline" href="#services">Services</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,7 +46,6 @@ const Header = () => {
                     <Image
                         src="/logo.svg"
                         alt="Adentro"
-                        className="dark:invert"
                         width={145}
                         height={25}
                         priority
@@ -54,10 +62,10 @@ const Header = () => {
                 <nav className="hidden sm:flex justify-center w-auto">
                     <ul className="flex items-center justify-center gap-6 md:gap-12">
                         <li>
-                            <a className="hover:underline" href="/culture">Culture</a>
+                            <a className="hover:underline" href="#culture">Culture</a>
                         </li>
                         <li>
-                            <a className="hover:underline" href="/contact">Contact</a>
+                            <a className="hover:underline" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -76,16 +84,24 @@ const Header = () => {
                     <ul
                         className="flex items-center justify-start flex-col gap-6 md:gap-12 py-20">
                         <li className="text-m">
-                            <a className="hover:underline text-lg" href="/approach">Approach</a>
+                            <a
+                                onClick={handleClickMenu}
+                                className="hover:underline text-lg" href="#approach">Approach</a>
                         </li>
                         <li>
-                            <a className="hover:underline text-lg" href="/services">Services</a>
+                            <a
+                                onClick={handleClickMenu}
+                                className="hover:underline text-lg" href="#services">Services</a>
                         </li>
                         <li>
-                            <a className="hover:underline text-lg" href="/culture">Culture</a>
+                            <a
+                                onClick={handleClickMenu}
+                                className="hover:underline text-lg" href="#culture">Culture</a>
                         </li>
                         <li>
-                            <a className="hover:underline text-lg" href="/contact">Contact</a>
+                            <a
+                                onClick={handleClickMenu}
+                                className="hover:underline text-lg" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>

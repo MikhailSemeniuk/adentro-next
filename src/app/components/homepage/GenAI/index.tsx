@@ -3,7 +3,7 @@ import Image from "next/image";
 const GenAi = () => {
 
     return (
-        <section className="py-20 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden lg:overflow-visible">
+        <section id="culture" className="py-20 relative flex w-full mx-auto flex-auto-no-shrink overflow-hidden lg:overflow-visible">
             <div className="container mx-auto flex flex-col justify-center gap-14 sm:gap-24 relative">
                 <h2 className="text-center text-section-heading-mobile sm:text-section-heading leading-none flex flex-col gap-8 justify-center items-center relative z-1">
                     <span>GenAI Modules</span>
